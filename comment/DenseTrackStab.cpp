@@ -134,9 +134,9 @@ int main(int argc, char** argv)
 	
  //初始化轨迹信息变量
 	InitTrackInfo(&trackInfo, track_length, init_gap);// 轨迹帧序列长度 分割
-	InitDescInfo(&hogInfo, 8, false, patch_size, nxy_cell, nt_cell);// 8个cell
-	InitDescInfo(&hofInfo, 9, true, patch_size, nxy_cell, nt_cell);// 9个 cell
-	InitDescInfo(&mbhInfo, 8, false, patch_size, nxy_cell, nt_cell);//8个cell
+	InitDescInfo(&hogInfo, 8, false, patch_size, nxy_cell, nt_cell);// 8个维度
+	InitDescInfo(&hofInfo, 9, true, patch_size, nxy_cell, nt_cell);// 9个 维度
+	InitDescInfo(&mbhInfo, 8, false, patch_size, nxy_cell, nt_cell);//8个维度
 
 	SeqInfo seqInfo;// 图像帧序列
 	InitSeqInfo(&seqInfo, video);// 把视频信息存到seqInfo当中
